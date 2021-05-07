@@ -1,0 +1,15 @@
+version: '3'
+services:
+  
+  alaya:
+    image: alaya:latest
+    container_name: alaya
+    working_dir: /root
+    environment:
+      - network=main #network：produce、test
+    volumes:
+      - ~/.data/alaya/data:/root/platon-node/data
+      - ~/.data/alaya/keystore:/root/mtool-client/keystore
+    # ports:
+    #   - 16788:16788
+    #   - 6788:16788

@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  platon:
+    image: platon:latest
+    container_name: platon
+    working_dir: /root
+    environment:
+      - network=main   #network：produce、test
+    volumes:
+      - ~/.data/platon/data:/root/platon-node/data
+      - ~/.data/platon/keystore:/root/platon_mtool/keystore
+    # ports:
+    #   - 16789:16789
+    #   - 6789:6789

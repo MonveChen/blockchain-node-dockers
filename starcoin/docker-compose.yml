@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  starcoin:
+    image: starcoin/starcoin:latest #使用官方镜像
+    container_name: starcoin
+    volumes:
+      - ~/.data/starcoin/.starcoin/:/root/.starcoin/
+    ports:
+      - 9850:9850
+    command: /starcoin/starcoin -n barnard

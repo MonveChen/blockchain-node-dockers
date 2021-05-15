@@ -4,8 +4,9 @@ services:
   starcoin:
     image: starcoin/starcoin:latest #使用官方镜像
     container_name: starcoin
+    hostname: starcoin.net
     volumes:
       - ~/.data/starcoin/.starcoin/:/root/.starcoin/
     ports:
       - 9850:9850
-    command: /starcoin/starcoin -n barnard
+    command: /starcoin/starcoin -n main

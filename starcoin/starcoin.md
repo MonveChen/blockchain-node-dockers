@@ -17,7 +17,7 @@ docker pull starcoin/starcoin:latest
 #### 进入控制台
 
 ```bash
-docker exec -it starcoin /starcoin/starcoin --connect ~/.starcoin/barnard/starcoin.ipc console
+docker exec -it starcoin /starcoin/starcoin --connect ~/.starcoin/main/starcoin.ipc console
 ```
 
 #### 查询进度

@@ -18,6 +18,16 @@ https://github.com/Chia-Network/chia-docker
 
 
 
+### 调整修改配置
+
+#### 127.0.0.1->0.0.0.0
+
+```bash
+sed -i 's/127.0.0.1/0.0.0.0/g' ~/.data/chia/.chia/mainnet/config/config.yaml
+```
+
+
+
 ### 校验是否同步
 
 ```bash

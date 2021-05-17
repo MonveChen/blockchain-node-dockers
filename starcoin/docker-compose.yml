@@ -7,6 +7,6 @@ services:
     hostname: starcoin.net
     volumes:
       - ~/.data/starcoin/.starcoin/:/root/.starcoin/
-    ports:
-      - 9850:9850
-    command: /starcoin/starcoin -n main
+    # ports:
+    #   - 9850:9850
+    command: /starcoin/starcoin -n main   #主网暂无法同步，还未上线 https://explorer.starcoin.org/main

@@ -5,6 +5,7 @@ services:
     image: ghcr.io/chia-network/chia:latest #使用官方镜像
     container_name: chia
     working_dir: /chia-blockchain
+    hostname: chia.net
     environment: 
       - plots_dir=/plots
     volumes:

@@ -5,6 +5,7 @@ services:
     image: platon:latest
     container_name: platon
     working_dir: /root
+    hostname: platon.net
     environment:
       - network=main   #network：produce、test
     volumes:

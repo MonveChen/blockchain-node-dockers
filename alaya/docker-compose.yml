@@ -5,6 +5,7 @@ services:
     image: alaya:latest
     container_name: alaya
     working_dir: /root
+    hostname: alaya.net
     environment:
       - network=main #network：produce、test
     volumes:

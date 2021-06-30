@@ -26,3 +26,19 @@ docker exec -it starcoin /starcoin/starcoin --connect ~/.starcoin/main/starcoin.
 node sync progress
 ```
 
+
+
+#### 转账激活地址
+
+解锁
+
+```bash
+account unlock
+```
+
+转账
+
+```bash
+account transfer -v 1000000000 -r <转入地址> -k <公钥> -b
+```
+
